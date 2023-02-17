@@ -26,7 +26,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl font-bold text-emerald-500">Job Door</a>
+                <a className="btn btn-ghost normal-case text-xl font-bold text-emerald-700 text-3xl ">Job <span className='text-orange-600'> Door</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -35,14 +35,14 @@ const Header = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user?.uid ? <><a className="btn bg-blue-300 border-none">Sign Out</a>
-                    </> : <><a className="btn bg-blue-300 border-none"><Link to='/signin'>Sign In</Link></a>
-                        <a className="btn bg-emerald-500 border-none ml-4"><Link to='/signup'>Sign Up</Link></a>
+                    user?.uid ? <><btn onClick={handleLogOut} className='btn border-none bg-orange-500'>Sign Out</btn>
+                    </> : <><a className="btn bg-orange-600 border-none"><Link to='/signin'>Sign In</Link></a>
+                        <a className="btn bg-emerald-700 border-none ml-4"><Link to='/signup'>Sign Up</Link></a>
                     </>
                 }
 
             </div>
-        </div>
+        </div >
     );
 };
 

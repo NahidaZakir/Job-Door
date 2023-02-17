@@ -25,7 +25,7 @@ const SignUp = () => {
     }
     return (
         <div className="hero w-full my-10">
-            <div className="card flex-shrink-0 w-2/5 shadow-2xl bg-emerald-500 py-20 ">
+            <div className="card flex-shrink-0 w-2/5 shadow-2xl bg-emerald-300 py-20 ">
                 <h1 className="text-5xl text-center font-bold">Sign up on Job Door</h1>
                 <form onSubmit={handleSignUp} className="card-body">
                     <div className="form-control">
