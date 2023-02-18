@@ -28,7 +28,7 @@ const Footer = () => {
             </footer>
 
             <div >
-                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © 2023 - All right reserved by Job Door</p>
             </div>
         </div>
 

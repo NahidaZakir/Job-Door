@@ -3,18 +3,29 @@ import React from 'react';
 const ExperiencedJob = ({ infor }) => {
     const { positionName, companyName, jobLocation, logo } = infor;
     return (
-        <div className="card w-96 bg-primary text-primary-content">
+        <div className="card w-96 border-2">
             <div className="card-body">
-                <h2 className="card-title">{positionName}</h2>
-                <p>{companyName}</p>
-                <p>{jobLocation}</p>
-                <div className="card-actions justify-end">
-                    <button className="btn">Apply</button>
-                </div>
-                <div className="avatar">
-                    <div className="w-24 rounded">
-                        <img src={logo} />
+                <div className='flex justify-between h-3/4'>
+                    <div>
+                        <h2 className="font-bold text-3xl">{positionName}</h2>
+                        <p className='text-xl'>Company: {companyName}</p>
+                        <p className='text-xl'>Location: {jobLocation}</p>
                     </div>
+                    <div>
+                        <div className="avatar ">
+                            <div className="w-16 h-16 rounded-full">
+                                <img src={logo} />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div className="flex justify-center h-1/4">
+                    <button className="btn font-bold bg-orange-600 border-none w-3/4">Apply</button>
                 </div>
             </div>
         </div>

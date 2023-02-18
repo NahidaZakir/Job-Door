@@ -12,16 +12,19 @@ const ExperiencedJobsAll = () => {
             .then(data => setJobs(data))
     }, []);
     return (
-        <div>
-            <div className='grid grid-cols-3 gap-4'>
-                {
-                    jobs.map(job => <ExperiencedJob key={job.jobNumber} infor={job}></ExperiencedJob>)
-                }
+        <div className='mt-10'>
+            <div className='flex justify-center'>
+                <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                    {
+                        jobs.map(job => <ExperiencedJob key={job.jobNumber} infor={job}></ExperiencedJob>)
+                    }
+
+                </div>
 
             </div>
 
             <div className='text-center mt-10'>
-                <Link to='/'><button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ">See Less</button></Link>
+                <Link to='/'><button className="btn border-none bg-orange-600 btn-md lg:btn-lg ">See Less</button></Link>
             </div>
         </div>
     );
