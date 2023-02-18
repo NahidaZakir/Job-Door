@@ -19,8 +19,8 @@ const FresherJobsAll = () => {
                     }
                 </div>
             </div>
-            <div className='text-center mt-10'>
-                <Link to='/'><button className="btn bg-orange-600 border-none btn-md lg:btn-lg">See Less</button></Link>
+            <div className='text-center my-10'>
+                <Link to='/'><button className="btn bg-emerald-600 border-none btn-md lg:btn-lg">See Less</button></Link>
             </div>
         </div>
 

@@ -23,7 +23,7 @@ const ExperiencedJobsAll = () => {
 
             </div>
 
-            <div className='text-center mt-10'>
+            <div className='text-center my-10'>
                 <Link to='/'><button className="btn border-none bg-orange-600 btn-md lg:btn-lg ">See Less</button></Link>
             </div>
         </div>

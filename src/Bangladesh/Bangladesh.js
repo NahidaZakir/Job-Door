@@ -12,15 +12,18 @@ const Bangladesh = () => {
             .then(data => setCompanies(data))
     }, []);
     return (
-        <div>
+        <div className='mb-10'>
             <div className='text-center'>
-                <h1>TOP TECH COMPANY Bangladesh</h1>
+                <h1 className='text-3xl lg:text-7xl mb-10 font-semibold'>Top IT Company Bangladesh</h1>
             </div>
-            <div className='grid grid-cols-3 gap-4'>
-                {
-                    companies.map(company => <Company key={company.jobNumber} infor={company}></Company>)
-                }
+            <div className='flex justify-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                    {
+                        companies.map(company => <Company key={company.jobNumber} infor={company}></Company>)
+                    }
+                </div>
             </div>
+
         </div>
     );
 };

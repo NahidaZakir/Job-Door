@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='footer-center'>
+        <div className='footer-center  bg-neutral text-neutral-content'>
             <footer className="footer p-10 flex justify-between">
                 <div>
                     <span className="footer-title">Employers</span>
