@@ -1,3 +1,4 @@
+import FresherJobsAll from "../FresherJobsAll/FresherJobsAll";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: '/signin',
                 element: <SignIn></SignIn>
+            },
+            {
+                path: '/fresherjobsall',
+                element: <FresherJobsAll></FresherJobsAll>
             }
 
         ]
