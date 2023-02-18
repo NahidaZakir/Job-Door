@@ -1,3 +1,4 @@
+import ExperiencedJobsAll from "../ExperiencedJobsAll/ExperiencedJobsAll";
 import FresherJobsAll from "../FresherJobsAll/FresherJobsAll";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: '/fresherjobsall',
                 element: <FresherJobsAll></FresherJobsAll>
+            },
+            {
+                path: '/experiencedjobsall',
+                element: <ExperiencedJobsAll></ExperiencedJobsAll>
             }
 
         ]
