@@ -7,7 +7,7 @@ import Company from '../Company/Company';
 const Bangladesh = () => {
     const [companies, setCompanies] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/bangladesh')
+        fetch(' https://job-door-server.vercel.app/bangladesh')
             .then(res => res.json())
             .then(data => setCompanies(data))
     }, []);

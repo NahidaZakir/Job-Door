@@ -7,7 +7,7 @@ import FresherJob from '../FresherJob/FresherJob';
 const FresherJobs = () => {
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/fresherjobs-6')
+        fetch(' https://job-door-server.vercel.app/fresherjobs-6')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, []);

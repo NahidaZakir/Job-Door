@@ -59,8 +59,9 @@ const SignIn = () => {
                 <div className="flex justify-center mr-8 ml-8 mt-2 mb-4">
                     <button onClick={handleGoogleLogIn} className="btn btn-base-200 w-full ">Log in with Google</button>
                 </div>
-                <p className='text-center'>New to Fresh Space? <Link className='font-bold' to="/signup">  Sign Up</Link></p>
+                <p className='text-center'>New to Job Door? <Link className='font-bold' to="/signup">  Sign Up</Link></p>
             </div>
+
         </div >
     );
 };

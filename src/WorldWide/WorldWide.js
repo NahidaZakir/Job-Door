@@ -7,7 +7,7 @@ import Company from '../Company/Company';
 const WorldWide = () => {
     const [companies, setCompanies] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/worldwide')
+        fetch(' https://job-door-server.vercel.app/worldwide')
             .then(res => res.json())
             .then(data => setCompanies(data))
     }, []);
